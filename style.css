@@ -1,0 +1,201 @@
+body {
+
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+
+    background-color:#F7F3F5;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+/* ---------- TITLE ---------- */
+
+#title {
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    opacity: 0;
+
+    transition:
+        opacity 1.2s ease,
+        top .9s ease,
+        font-size .9s ease;
+
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 120px;
+    font-weight: 800;
+
+    letter-spacing: 8px;
+
+    color: #242223;
+
+    margin: 0;
+}
+
+/* ---------- TITLE COMPACT ---------- */
+#title.compact {
+
+    top: 80px;
+
+    font-size: 56px;
+
+}
+
+/* ---------- ASTERISK ---------- */
+
+#asterisk {
+
+    cursor: pointer;
+
+    transition: color .3s ease;
+}
+
+#asterisk:hover {
+
+    color: white;
+
+}
+
+/* ---------- SUBLINE ---------- */
+
+.subline {
+
+    opacity: 0;
+
+    transition: opacity .8s ease;
+
+    font-family: Helvetica, Arial, sans-serif;
+
+    font-size: 30px;
+
+    color: #242223;
+
+    cursor: pointer;
+
+    min-height: 40px;
+
+}
+
+/* ---------- CONTACT ---------- */
+
+#contact {
+
+    opacity: 0;
+
+    transition: opacity .8s ease;
+
+    font-family: Helvetica, Arial, sans-serif;
+
+    font-size: 24px;
+
+    color: #242223;
+
+    margin-top: 40px;
+
+}
+
+#contact p {
+
+    margin: 10px;
+}
+
+/* ---------- FOOTNOTE ---------- */
+
+#footnote {
+
+    opacity: 0;
+
+    transition: opacity .4s ease;
+
+    position: absolute;
+
+    bottom: 30px;
+
+    right: 40px;
+
+    font-family: inter;
+
+    color: #242223;
+}
+
+/* ==========================================================
+   FONT STYLES
+   ========================================================== */
+
+:root {
+
+    --title-font: "Inter", sans-serif;
+    --subline-font: "Inter", sans-serif;
+    --body-font: "Inter", sans-serif;
+
+    --title-weight: 700;
+    --subline-weight: 400;
+    --body-weight: 300;
+
+}
+
+
+/* ----------------------------------------------------------
+   FONT STYLE 01 — INTER
+   ---------------------------------------------------------- */
+
+.font-style-01 {
+
+    --title-font: "Inter", sans-serif;
+    --subline-font: "Inter", sans-serif;
+    --body-font: "Inter", sans-serif;
+
+}
+
+
+/* ----------------------------------------------------------
+   FONT STYLE 02 — IBM PLEX SANS
+   ---------------------------------------------------------- */
+
+.font-style-02 {
+
+    --title-font: "IBM Plex Sans", sans-serif;
+    --subline-font: "IBM Plex Sans", sans-serif;
+    --body-font: "IBM Plex Sans", sans-serif;
+
+}
+
+
+/* ----------------------------------------------------------
+   FONT STYLE 03 — INSTRUMENT SANS
+   ---------------------------------------------------------- */
+
+.font-style-03 {
+
+    --title-font: "Instrument Sans", sans-serif;
+    --subline-font: "Instrument Sans", sans-serif;
+    --body-font: "Instrument Sans", sans-serif;
+
+}
+
+
+/* ----------------------------------------------------------
+   FONT STYLE 04 — SYSTEM UI
+   ---------------------------------------------------------- */
+
+.font-style-04 {
+
+    --title-font: system-ui, sans-serif;
+    --subline-font: system-ui, sans-serif;
+    --body-font: system-ui, sans-serif;
+
+}
